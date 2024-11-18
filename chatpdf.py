@@ -25,6 +25,8 @@ embeddings=HuggingFaceEmbeddings(model_name="all-MiniLM-L6-v2")
 st.title("Ameya Data Solutions")
 st.subheader("Chat with your document")
 st.write("Upload Pdf")
+groq = st.secrets["GROQ_API_KEY"]
+hf_token = st.secrets["HF_TOKEN"]
 
 ## Input the Groq API Key
 api_key = os.getenv("GROQ_API_KEY")
